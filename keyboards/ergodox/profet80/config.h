@@ -60,6 +60,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     get_mods() == (MOD_BIT(KC_LCTL) | MOD_BIT(KC_RCTL)) || \
     get_mods() == (MOD_BIT(KC_LSFT) | MOD_BIT(KC_RSFT)) \
 )
+/* allows sending of multiple keystrokes per scan. This is account for the slow scan rate of the ErgoDox */
+#define QMK_KEYS_PER_SCAN 4
 
 /* number of backlight levels */
 #define BACKLIGHT_LEVELS 3
