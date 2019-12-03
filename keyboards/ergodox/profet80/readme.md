@@ -10,10 +10,10 @@ Linux page].  Some distributions provide a binary, maybe called
 
 To flash the firmware:
 
-  - Build the firmware with `make <keyboardname>:<keymapname>`, for example `make ergodox:profet80:pete`
+  - Build the firmware with `make <keyboard>/<keyboardname>:<keymapname>`, for example `make ergodox/profet80:pete`
 
-  - This will result in a hex file called `ergodox_ez_keymapname.hex`, e.g.
-    `ergodox_ez_default.hex`
+  - This will result in a hex file called `ergodox_profet80_<keymapname>.hex`, e.g.
+    `ergodox_profet80_pete.hex`
 
   - Start the teensy loader.
 
@@ -29,10 +29,9 @@ To flash with ´teensy-loader-cli´:
 
   - Build the firmware with `make keymapname`, for example `make default`
 
-  - Run ´<path/to/>teensy_loader_cli -mmcu=atmega32u4 -w ergodox_ez_<keymap>.hex´
+  - Run ´<path/to/>teensy_loader_cli -mmcu=atmega32u4 -w ergodox_profet80_<keymap>.hex´
 
-  - Press the Reset button by inserting a paperclip gently into the reset hole
-    in the top right corder.
+  - Press the Reset button (may vary depending on case).
 
 ## Settings
 
